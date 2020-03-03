@@ -3,11 +3,12 @@
 This repository contains example YAMLs for standing up Prometheus and Grafana instances for performance monitoring of a YugabyteDB on a Kubernetes cluster. These source files can be customized for your specfic deployment.
 
 **Compatibility**
-Product		Version
-YugabyteDB	1.x, 2.x
-Kubernetes	1.12+
-Prometheus	2.x
-Grafana		6.x
+|Product	|		Version		|
+|-----------|-------------------|
+|YugabyteDB |		1.x, 2.x 	|
+|Kubernetes	|		1.12+		|
+|Prometheus	|		2.x 		|
+|Grafana	|		6.x 		|
 
 **Architecture**
 
