@@ -37,8 +37,8 @@ kubectl get svc -n yb-demo
 
 4. Configure your Prometheus instance as a source of data for Grafana. If deployed as is, the Prometheus will be accessible at *http://prometheus:9090*
 
-(img/yb-prometheus-source.png)
+![Prometheus Source](img/yb-prometheus-source.png)
 
 5. Build your Grafana dashboard
 
-(img/yb-dashboard-example.png)
+![Dashboard Example](img/yb-dashboard-example.png)
