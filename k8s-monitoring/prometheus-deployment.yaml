@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ labels:
+  name: prometheus
+ name: prometheus
+ namespace: yb-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: prometheus-server
+  template:
+   metadata:
+    labels:
+      app: prometheus-server
+   spec:
+    containers:
+    - name: prometheus
+      image: prom/prometheus:v2.15.2
+      imagePullPolicy: Always
+      ports:
+        - containerPort: 9090
+          protocol: TCP
+      volumeMounts:
+        - mountPath: "/etc/prometheus"
+          name: config-prometheus
+    volumes:
+    - name: config-prometheus
+      configMap:
+       name: prometheus-config
