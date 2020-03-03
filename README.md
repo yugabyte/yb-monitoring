@@ -42,3 +42,6 @@ kubectl get svc -n yb-demo
 5. Build your Grafana dashboard
 
 ![Dashboard Example](img/yb-dashboard-example.png)
+
+**Additional Links**
+- kube-state-metrics deployment for Kubernetes: https://github.com/kubernetes/kube-state-metrics#kubernetes-deployment
