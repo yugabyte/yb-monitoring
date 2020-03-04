@@ -17,8 +17,7 @@ This repository contains example YAMLs for standing up Prometheus and Grafana in
 
 **Usage**
 
-1. Install YugaByte DB
-You should first install YugaByte DB, which is a distributed SQL database compatible with the PostgreSQL language. Getting started available from https://docs.yugabyte.com/latest/quick-start/. If using helm, you can use
+1. You should first install YugaByte DB, which is a distributed SQL database compatible with the PostgreSQL language. Getting started available from https://docs.yugabyte.com/latest/quick-start/. If using helm, you can use
 ```
 helm install yb-demo --namespace yb-demo yugabytedb/yugabyte -f https://raw.githubusercontent.com/YugaByte/charts/master/stable/yugabyte/expose-all.yaml --wait --set resource.master.requests.cpu=0.1,resource.master.requests.memory=0.2Gi,resource.tserver.requests.cpu=0.1,resource.tserver.requests.memory=0.2Gi
 ```
